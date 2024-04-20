@@ -14,7 +14,7 @@ env:
   REPO_URL: https://github.com/breeze303/openwrt-ipq60xx.git
   REPO_BRANCH: main
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: .config-jdc-ax1800-test
+  CONFIG_FILE: .config-ax1800-test
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-openwrt-test.sh
   TZ: Asia/Shanghai
