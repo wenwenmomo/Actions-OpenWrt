@@ -11,7 +11,7 @@ on:
     - cron: 0 16 4,9,14,19,24,28,31 * *
 
 env:
-  REPO_URL: https://github.com/JiaY-shi/openwrt.git
+  REPO_URL: https://github.com/breeze303/openwrt-ipq60xx.git
   REPO_BRANCH: main
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config-jdc-ax1800-test
