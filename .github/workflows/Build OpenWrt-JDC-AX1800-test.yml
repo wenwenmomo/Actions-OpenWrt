@@ -2,7 +2,7 @@
 # https://github.com/quanjindeng/Actions_OpenWrt
 #
 
-name: Build OpenWrt-JDC-AX1800
+name: Build OpenWrt-JDC-AX1800-t
 
 on:
   repository_dispatch:
@@ -107,14 +107,6 @@ jobs:
         chmod +x $DIY_P2_SH
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P2_SH
-        
-    - name: Apply patches   
-      run: |
-        git config --global user.name "OpenWrt Builder"
-        git config --global user.email "buster-openwrt@ovvo.uk"
-        cd $OPENWRT_PATH/feeds/luci
-        wget https://raw.githubusercontent.com/openwrt-ipq60xx/patches/main/feeds/luci/0001-show-soc-status-on-luci.patch
-        git am 0001-show-soc-status-on-luci.patch
         
     - name: 下载软件包
       id: package
